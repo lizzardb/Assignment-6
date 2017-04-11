@@ -1,0 +1,4 @@
+.beta {width: 600px; position: absolute; background-color: red;}
+.delta {width: 600px; position: absolute; background-color: blue;}
+.gamma {width: 600px; position: absolute; background-color: yellow;}
+.warning {color: red;}

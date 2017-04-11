@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment #6 - Liz Brown</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+    <script src="js/Assignment6.js"></script>
+</head>
+
+<body onload="GoDark()">
+
+<body>
+    <section id="alpha" class="alpha">
+        <h1>Assignment #6</h1>
+    <hr>
+    <select onchange="OptionChange()" id="options">
+        <option>Please choose an area:</option>
+        <option>Add Customer(s)</option>
+        <option>Update Shipping Addresses</option>
+        <option>Delete Customer(s)</option>
+    </select>
+    <hr>
+    </section>
+    
+    <section id="beta" class="beta">
+        <label>Please enter a Customer ID: </label>
+        <input type="text" id="custid">
+        <label class="warning"> This should be 5 uppercase text characters.</label>
+        <br>
+        <br>
+        <label>Please enter a Customer Name: </label>
+        <input type="text" id="custname">
+        <br>
+        <br>
+        <label>Please enter a Customer City: </label>
+        <input type="text" id="custcity">
+        <br>
+        <br>
+        <button onclick="CreateCustomer()" id="newcust">Add a New Customer</button>
+        <br>
+        <hr>
+        <br>
+        <label id="resultA">Operation results will display here.</label>
+    </section>
+    
+    <section id="delta" class="delta">
+        <label>Please enter an Order Number: </label>
+        <input type="text" id="orderno">
+        <br>
+        <br>
+        <label>Please enter a Ship-To Name: </label>
+        <input type="text" id="shipname">
+        <br>
+        <br>
+        <label>Please enter a Ship-To Address: </label>
+        <input type="text" id="shipaddress">
+        <br>
+        <br>
+        <label>Please enter a Ship-To City: </label>
+        <input type="text" id="shipcity">
+        <br>
+        <br>
+        <label>Please enter a Ship-To Zip Code: </label>
+        <input type="text" id="shipzip">
+        <br>
+        <br>
+        <button onclick="UpdateAddress()" id="addressupdate">Update Shipping Address</button>
+        <br>
+        <hr>
+        <br>
+        <label id="resultB">Operation results will display here.</label>
+    </section>
+    
+    <section id="gamma" class="gamma">
+        <label>Please enter a Customer ID: </label>
+        <input type="text" id="custid">
+        <label class="warning"> This should be 5 uppercase text characters.</label>
+        <br>
+        <br>
+        <button onclick="DeleteCustomer()" id="customerdelete">Delete a Customer</button>
+        <br>
+        <hr>
+        <br>
+        <label id="resultC">Operation results will display here.</label>
+    </section>
+
+
+</body>
+</html>
